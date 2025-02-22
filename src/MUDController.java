@@ -49,7 +49,7 @@ public class MUDController {
         System.out.println("Welcome the low text based game!\nPlease select the genre of the room. Sci-Fi or Fantasy.\nType 'help' for a list of commands");
         boolean running = true;
         while (running) {
-            System.out.println("> ");
+            System.out.print("> ");
             String input = scanner.nextLine().trim().toLowerCase();
             if (input.equals("quit") || input.equals("exit")) {
                 running = false;
@@ -59,11 +59,7 @@ public class MUDController {
         }
         System.out.println("Game stopped");
         scanner.close();
-        // TODO: Implement a loop that:
-        // 1) Prints a prompt (e.g., "> ")
-        // 2) Reads user input
-        // 3) Calls handleInput(input)
-        // 4) Terminates when 'running' is set to false
+        System.exit(0);
     }
 
     /**
